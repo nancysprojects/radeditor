@@ -1,0 +1,4 @@
+ var radWindow = $telerik.$("[id$='RadEditControlName']").get(0).control;
+ var formData = new FormData();
+ formData.append('pdescription', radWindow.get_html());
+  
