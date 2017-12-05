@@ -2,3 +2,14 @@
  var formData = new FormData();
  formData.append('pdescription', radWindow.get_html());
   
+   $.ajax({
+        url: "/Handlers/xxx.ashx",
+        type: "POST",
+    
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function (e) { showMessage(e,"Successful Update") },
+        error: onupdaterror 
+    });
